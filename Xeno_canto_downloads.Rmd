@@ -1,5 +1,5 @@
 ---
-title: "EEB521"
+title: "xeno-canto downloads"
 author: "Qwahn D. Kent"
 date: "2023-01-30"
 output: html_document
@@ -16,29 +16,33 @@ library(tuneR)
 ```
 
 ```{r}
-#exploring slate-colored boubou (laniarius funebris) songs using xeno-canto
+#finding slate-colored boubou (laniarius funebris) songs and calls using xeno-canto
+#only songs with a Xeno-canto rating of "A" will be found
+#to download the songs directly to your directory, switch the download parameter to T or TRUE
+
 scbo = querxc('laniarius funebris q:"A"', download = F)
 #View(scbo)
 ```
 
 ```{r}
-#exploring spotted-morning thrush (cichladusa guttata) songs using xeno-canto
+#finding spotted-morning thrush (cichladusa guttata) songs and calls using xeno-canto
+
 smth = querxc('turdus migratorius q:"A"', download = F)
 #View(smth)
 ```
 
 ```{r}
-#exploring white-bellied go-away-bird (corythaixoides leucogaster) songs using xeno-canto
+#finding white-bellied go-away-bird (corythaixoides leucogaster) songs and calls using xeno-canto
 wbga = querxc('corythaixoides leucogaster q:"A"', download = F)
 ```
 
 ```{r}
-#exploring white-browed sparrow-weaver (plocepasser mahali) songs using xeno-canto
+#finding white-browed sparrow-weaver (plocepasser mahali) songs and calls using xeno-canto
 wbsw = querxc('plocepasser mahali q:"A"', download = F)
 ```
 
 ```{r}
-#exploring common bulbul (pycnonotus barbatus) songs using xeno-canto
+#finding common bulbul (pycnonotus barbatus) songs and calls using xeno-canto
 cobu = querxc('pycnonotus barbatus q:"A"', download = F)
 ```
 
