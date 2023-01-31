@@ -1,2 +1,2 @@
 # eeb521
-all the coded ran for the eeb521 project on how bird vocalizations change based on the level of anthropogenic noise
+all the coded ran for the Princeton eeb521 course and Imageomics project on how the vocalizations of 5 bird species (Slate-colored Boubou *laniarius funebris*, Spotted-mourning Thrush *cichladusa guttata*, White-bellied Go-away-bird *corythaixoides leucogaster*, White-browed Sparrow-weaver *plocepasser mahali, and Common Bulbul *pycnonotus barbatus*) in central Kenya change based on the level of anthropogenic noise
