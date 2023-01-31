@@ -26,7 +26,6 @@ scbo = querxc('laniarius funebris q:"A"', download = F)
 
 ```{r}
 #finding spotted-morning thrush (cichladusa guttata) songs and calls using xeno-canto
-
 smth = querxc('turdus migratorius q:"A"', download = F)
 #View(smth)
 ```
