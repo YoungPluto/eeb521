@@ -1,0 +1,44 @@
+---
+title: "EEB521"
+author: "Qwahn D. Kent"
+date: "2023-01-30"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#load necessary packagaes
+library(warbleR)
+library(tuneR)
+```
+
+```{r}
+#exploring slate-colored boubou (laniarius funebris) songs using xeno-canto
+scbo = querxc('laniarius funebris q:"A"', download = F)
+#View(scbo)
+```
+
+```{r}
+#exploring spotted-morning thrush (cichladusa guttata) songs using xeno-canto
+smth = querxc('turdus migratorius q:"A"', download = F)
+#View(smth)
+```
+
+```{r}
+#exploring white-bellied go-away-bird (corythaixoides leucogaster) songs using xeno-canto
+wbga = querxc('corythaixoides leucogaster q:"A"', download = F)
+```
+
+```{r}
+#exploring white-browed sparrow-weaver (plocepasser mahali) songs using xeno-canto
+wbsw = querxc('plocepasser mahali q:"A"', download = F)
+```
+
+```{r}
+#exploring common bulbul (pycnonotus barbatus) songs using xeno-canto
+cobu = querxc('pycnonotus barbatus q:"A"', download = F)
+```
+
