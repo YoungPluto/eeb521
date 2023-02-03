@@ -39,5 +39,16 @@ del_files = files
 unlink(del_files)
 ```
 
-
+```{r}
+#convert all files from stereo to mono
+counter = 0
+wavfiles = list.files(path = my_directory, pattern = "*.wav", full.names = T, recursive = F)
+for(i in wavfiles){
+  wav = read_wav(i)
+  new_wav = mono(wav, which = "left")
+  counter = counter + 1
+  name = paste("SCBO",as.character(counter),".wav")
+  writeWave(new_wav, name)
+}
+```
 
