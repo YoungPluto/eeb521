@@ -52,3 +52,9 @@ for(i in wavfiles){
 }
 ```
 
+```{r}
+#delete the stereo wav files to avoid confusion
+del_stereo = list.files(path = my_directory, pattern = "Laniarius-*", full.names = T, recursive = F)
+unlink(del_stereo)
+
+```
