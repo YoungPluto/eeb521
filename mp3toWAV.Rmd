@@ -1,0 +1,43 @@
+---
+title: "Untitled"
+author: "Qwahn D. Kent"
+date: "2023-02-03"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+#load the library tuneR
+library(bioacoustics)
+```
+
+```{r}
+#set working directory
+##change the file path to wherever the mp3 files are stored
+my_directory = "/Users/qwahnkent/Desktop/EEB521/Training_Vocalizations/SCBO"
+setwd(my_directory)
+```
+
+
+```{r}
+#Converting mp3 to WAV
+##for this conversion, use the bioacustics mp3_to_wav function rather than the tuneR version
+
+files = list.files(path = my_directory, pattern = "*.mp3", full.names = T, recursive = F)
+for(i in files){
+  t = mp3_to_wav(i, output_dir = my_directory)
+}  
+
+```
+
+```{r}
+#delete the mp3 files to save space on disk
+del_files = files
+unlink(del_files)
+```
+
+
+
